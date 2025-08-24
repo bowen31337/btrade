@@ -1,5 +1,8 @@
 # Ignore all hidden folders (folders starting with .)
 .*/
+# But allow GitHub workflows
+!.github/
+!.github/workflows/
 
 # Node modules
 node_modules/
