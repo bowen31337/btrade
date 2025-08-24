@@ -3,6 +3,8 @@
 # But allow GitHub workflows
 !.github/
 !.github/workflows/
+# But ignore chatmodes
+.github/chatmodes/
 
 # Node modules
 node_modules/
