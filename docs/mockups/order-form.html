@@ -1,0 +1,50 @@
+<div class="w-full bg-[#252930] text-[#EAECEF] font-sans p-4 rounded-lg">
+
+  <h2 class="text-lg font-bold mb-4">Order Form</h2>
+
+  <div class="grid grid-cols-2 gap-4">
+
+    <!-- Buy Column -->
+    <div>
+      <div class="flex space-x-4 mb-4">
+        <button class="px-4 py-2 rounded-md bg-[#F0B90B] text-black">Limit</button>
+        <button class="px-4 py-2 rounded-md hover:bg-[#F0B90B] hover:text-black">Market</button>
+        <button class="px-4 py-2 rounded-md hover:bg-[#F0B90B] hover:text-black">Stop-limit</button>
+      </div>
+      <div class="space-y-4">
+        <input type="text" placeholder="Price (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+        <input type="text" placeholder="Amount (BTC)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+        <div class="flex justify-between space-x-2">
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">25%</button>
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">50%</button>
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">75%</button>
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">100%</button>
+        </div>
+        <input type="text" placeholder="Total (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+        <button class="w-full py-2 rounded-md bg-[#0ECB81] text-white font-bold hover:bg-green-500">Buy BTC</button>
+      </div>
+    </div>
+
+    <!-- Sell Column -->
+    <div>
+      <div class="flex space-x-4 mb-4 invisible">
+        <button class="px-4 py-2 rounded-md">Limit</button>
+        <button class="px-4 py-2 rounded-md">Market</button>
+        <button class="px-4 py-2 rounded-md">Stop-limit</button>
+      </div>
+      <div class="space-y-4">
+        <input type="text" placeholder="Price (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+        <input type="text" placeholder="Amount (BTC)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+        <div class="flex justify-between space-x-2">
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">25%</button>
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">50%</button>
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">75%</button>
+          <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">100%</button>
+        </div>
+        <input type="text" placeholder="Total (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+        <button class="w-full py-2 rounded-md bg-[#F6465D] text-white font-bold hover:bg-red-500">Sell BTC</button>
+      </div>
+    </div>
+
+  </div>
+</div>

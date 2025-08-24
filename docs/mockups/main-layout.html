@@ -1,0 +1,183 @@
+<div class="w-full h-screen bg-[#1E2026] text-[#EAECEF] font-sans">
+
+  <!-- Top Navigation Bar -->
+  <div class="flex items-center justify-between p-4 border-b border-gray-700">
+    <div class="flex items-center space-x-8">
+      <div class="text-2xl font-bold text-[#F0B90B]">BTrade</div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-[#F0B90B]">Trade</a>
+        <a href="#" class="hover:text-[#F0B90B]">Markets</a>
+        <a href="#" class="hover:text-[#F0B90B]">Futures</a>
+        <a href="#" class="hover:text-[#F0B90B]">Earn</a>
+        <a href="#" class="hover:text-[#F0B90B]">More</a>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="#" class="hover:text-[#F0B90B]">Log In</a>
+      <a href="#" class="bg-[#F0B90B] text-black px-4 py-2 rounded-md hover:bg-yellow-400">Sign Up</a>
+      <a href="#" class="hover:text-[#F0B90B]">Downloads</a>
+      <a href="#" class="hover:text-[#F0B90B]">USD</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="grid grid-cols-12 gap-4 p-4">
+
+    <!-- Left Panel -->
+    <div class="col-span-3">
+      <div class="bg-[#252930] p-4 rounded-lg">
+        <h2 class="text-lg font-bold mb-4">Asset/Trading Pair List</h2>
+        <div class="relative">
+          <input type="text" placeholder="Search" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+          <svg class="absolute right-3 top-2.5 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+        <ul class="mt-4 space-y-2">
+          <li class="flex justify-between items-center p-2 rounded-md bg-[#1E2026]">
+            <div>
+              <div class="font-bold">BTC/USDT</div>
+              <div class="text-sm text-gray-400">Bitcoin</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-[#0ECB81]">65,000.00</div>
+              <div class="text-sm text-gray-400">+1.25%</div>
+            </div>
+          </li>
+          <li class="flex justify-between items-center p-2 rounded-md hover:bg-[#1E2026]">
+            <div>
+              <div class="font-bold">ETH/USDT</div>
+              <div class="text-sm text-gray-400">Ethereum</div>
+            </div>
+            <div class="text-right">
+              <div class="font-bold text-[#F6465D]">3,500.00</div>
+              <div class="text-sm text-gray-400">-0.50%</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Center Panel -->
+    <div class="col-span-6">
+      <div class="bg-[#252930] p-4 rounded-lg">
+        <h2 class="text-lg font-bold mb-4">Price Chart</h2>
+        <div class="h-96 bg-[#1E2026] rounded-md"></div>
+      </div>
+      <div class="bg-[#252930] p-4 rounded-lg mt-4">
+        <h2 class="text-lg font-bold mb-4">Order Form</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="flex space-x-4 mb-4">
+              <button class="px-4 py-2 rounded-md bg-[#F0B90B] text-black">Limit</button>
+              <button class="px-4 py-2 rounded-md hover:bg-[#F0B90B] hover:text-black">Market</button>
+              <button class="px-4 py-2 rounded-md hover:bg-[#F0B90B] hover:text-black">Stop-limit</button>
+            </div>
+            <div class="space-y-4">
+              <input type="text" placeholder="Price (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+              <input type="text" placeholder="Amount (BTC)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+              <div class="flex justify-between space-x-2">
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">25%</button>
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">50%</button>
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">75%</button>
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">100%</button>
+              </div>
+              <input type="text" placeholder="Total (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+              <button class="w-full py-2 rounded-md bg-[#0ECB81] text-white font-bold hover:bg-green-500">Buy BTC</button>
+            </div>
+          </div>
+          <div>
+            <div class="flex space-x-4 mb-4 invisible">
+              <button class="px-4 py-2 rounded-md">Limit</button>
+              <button class="px-4 py-2 rounded-md">Market</button>
+              <button class="px-4 py-2 rounded-md">Stop-limit</button>
+            </div>
+            <div class="space-y-4">
+              <input type="text" placeholder="Price (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+              <input type="text" placeholder="Amount (BTC)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+              <div class="flex justify-between space-x-2">
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">25%</button>
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">50%</button>
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">75%</button>
+                <button class="w-1/4 py-2 rounded-md bg-[#1E2026] hover:bg-[#F0B90B] hover:text-black">100%</button>
+              </div>
+              <input type="text" placeholder="Total (USDT)" class="w-full bg-[#1E2026] border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F0B90B]">
+              <button class="w-full py-2 rounded-md bg-[#F6465D] text-white font-bold hover:bg-red-500">Sell BTC</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="col-span-3">
+      <div class="bg-[#252930] p-4 rounded-lg">
+        <h2 class="text-lg font-bold mb-4">Order Book</h2>
+        <div class="grid grid-cols-3 text-sm text-gray-400 mb-2">
+          <div>Price (USDT)</div>
+          <div class="text-right">Amount (BTC)</div>
+          <div class="text-right">Total</div>
+        </div>
+        <ul>
+          <li class="grid grid-cols-3 text-sm text-[#F6465D]">
+            <div>65,000.00</div>
+            <div class="text-right">0.123</div>
+            <div class="text-right">7,995.00</div>
+          </li>
+          <li class="grid grid-cols-3 text-sm text-[#F6465D]">
+            <div>64,999.99</div>
+            <div class="text-right">0.456</div>
+            <div class="text-right">29,639.54</div>
+          </li>
+        </ul>
+        <div class="text-lg font-bold my-2 text-center text-[#0ECB81]">65,000.00</div>
+        <ul>
+          <li class="grid grid-cols-3 text-sm text-[#0ECB81]">
+            <div>64,999.98</div>
+            <div class="text-right">0.789</div>
+            <div class="text-right">51,284.98</div>
+          </li>
+          <li class="grid grid-cols-3 text-sm text-[#0ECB81]">
+            <div>64,999.97</div>
+            <div class="text-right">1.012</div>
+            <div class="text-right">65,779.97</div>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-[#252930] p-4 rounded-lg mt-4">
+        <h2 class="text-lg font-bold mb-4">Market Trades</h2>
+        <div class="grid grid-cols-3 text-sm text-gray-400 mb-2">
+          <div>Price (USDT)</div>
+          <div class="text-right">Amount (BTC)</div>
+          <div class="text-right">Time</div>
+        </div>
+        <ul>
+          <li class="grid grid-cols-3 text-sm text-[#F6465D]">
+            <div>65,000.00</div>
+            <div class="text-right">0.001</div>
+            <div class="text-right">14:05:12</div>
+          </li>
+          <li class="grid grid-cols-3 text-sm text-[#0ECB81]">
+            <div>64,999.99</div>
+            <div class="text-right">0.002</div>
+            <div class="text-right">14:05:11</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Panel -->
+  <div class="p-4">
+    <div class="bg-[#252930] p-4 rounded-lg">
+      <div class="flex space-x-8 border-b border-gray-700 mb-4">
+        <button class="py-2 border-b-2 border-[#F0B90B] text-[#F0B90B]">Open Orders</button>
+        <button class="py-2 text-gray-400 hover:text-[#F0B90B]">Order History</button>
+        <button class="py-2 text-gray-400 hover:text-[#F0B90B]">Trade History</button>
+      </div>
+      <div class="text-center text-gray-400">You have no open orders.</div>
+    </div>
+  </div>
+
+</div>
